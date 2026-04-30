@@ -1,74 +1,73 @@
 <!doctype html>
-<html lang="en" class="locked">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Morgan Gil</title>
-  <meta name="description" content="Morgan Gil is an artist working across photography, film, field research, landscape, architecture, and built fragments.">
-  <meta property="og:title" content="Morgan Gil">
-  <meta property="og:description" content="Artist portfolio. Photography, film, field research, landscape, architecture, and built fragments.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://morgangil.com/">
-  <link rel="canonical" href="https://morgangil.com/">
+  <meta name="description" content="Morgan Gil artist site framework.">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/auth.js" defer></script>
 </head>
 <body>
-  <header class="site-header" data-header>
-    <a class="site-title" href="index.html">Morgan Gil</a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <a href="work.html">Work</a>
-      <a href="biography.html">Biography</a>
-      <a href="exhibitions.html">Exhibitions</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+    <span></span>
+    <span></span>
+  </button>
 
-  <main>
-    <section class="hero">
-      <h1>Morgan Gil</h1>
-      <p>Artist working across images, field studies, built fragments, landscape, and systems of place.</p>
-    </section>
+  <div class="site-shell">
+    <aside class="desktop-menu" aria-label="Desktop navigation">
+      <nav>
+        <a class="site-name" href="index.html">MORGAN GIL</a>
 
-    <section class="index-list">
-      <div class="section-label">Selected work</div>
-      <div class="work-list">
-        <a class="work-row" href="field-studies.html">
-          <span class="work-title">Field Studies</span>
-          <span class="work-meta">Photography, field notes, ongoing</span>
-          <span class="work-year">2026</span>
-        </a>
-        <a class="work-row" href="built-fragments.html">
-          <span class="work-title">Built Fragments</span>
-          <span class="work-meta">Objects, structures, process studies</span>
-          <span class="work-year">2025</span>
-        </a>
-        <a class="work-row" href="edge-conditions.html">
-          <span class="work-title">Edge Conditions</span>
-          <span class="work-meta">Coast, trail, settlement, threshold</span>
-          <span class="work-year">2025</span>
-        </a>
-        <a class="work-row" href="anatomy-of-the-network.html">
-          <span class="work-title">Anatomy of the Network</span>
-          <span class="work-meta">Research, diagrams, speculative infrastructure</span>
-          <span class="work-year">2026</span>
-        </a>
-      </div>
-    </section>
+        <div class="menu-group">
+          <a href="#">Lorem ipsum</a>
+          <a href="#">A</a>
+          <a href="#">B</a>
+          <a href="#">C</a>
+          <a href="#">D</a>
+          <a href="#">E</a>
+        </div>
 
-    <section class="image-grid image-grid-home" aria-label="Work previews">
-      <a class="thumb" href="field-studies.html"><span>Field Studies</span></a>
-      <a class="thumb tall" href="built-fragments.html"><span>Built Fragments</span></a>
-      <a class="thumb wide" href="edge-conditions.html"><span>Edge Conditions</span></a>
-      <a class="thumb" href="anatomy-of-the-network.html"><span>Anatomy of the Network</span></a>
-    </section>
-  </main>
+        <div class="menu-group">
+          <a href="#">Dolor sit amet</a>
+          <a href="#">F</a>
+          <a href="#">G</a>
+          <a href="#">H</a>
+        </div>
 
-  <footer class="site-footer">
-    <span>© <span data-year></span> Morgan Gil</span>
-    <span>Plettenberg Bay, South Africa</span>
-  </footer>
+        <div class="menu-group">
+          <a href="#">Information</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content-column">
+      <figure class="work-view">
+        <div class="image-placeholder" role="img" aria-label="Image placeholder"></div>
+        <figcaption>
+          <span>Title</span>
+          <span>Place, Year</span>
+        </figcaption>
+      </figure>
+    </main>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a class="site-name" href="index.html">MORGAN GIL</a>
+    <div class="mobile-links">
+      <a href="#">Lorem ipsum</a>
+      <a href="#">A</a>
+      <a href="#">B</a>
+      <a href="#">C</a>
+      <a href="#">D</a>
+      <a href="#">E</a>
+      <a href="#">Dolor sit amet</a>
+      <a href="#">F</a>
+      <a href="#">G</a>
+      <a href="#">H</a>
+      <a href="#">Information</a>
+    </div>
+  </nav>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
