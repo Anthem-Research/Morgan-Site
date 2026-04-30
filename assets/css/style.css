@@ -1,7 +1,6 @@
 :root {
   --bg: #ffffff;
   --fg: #111111;
-  --muted: #6f6f6f;
   --font: Arial, Helvetica, sans-serif;
 }
 
@@ -16,9 +15,9 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font);
-  font-size: 12px;
-  line-height: 1.28;
-  letter-spacing: 0.12em;
+  font-size: 8px;
+  line-height: 1.35;
+  letter-spacing: 0.11em;
 }
 
 a {
@@ -37,30 +36,23 @@ a {
   align-items: center;
   justify-content: flex-end;
   min-height: 100vh;
-  padding: 7vh 3.2vw 7vh 4vw;
+  padding: 7vh 3.4vw 7vh 4vw;
   text-align: right;
 }
 
 .desktop-menu nav {
-  width: 260px;
-}
-
-.site-name {
-  display: block;
-  margin-bottom: 42px;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
+  width: 230px;
 }
 
 .menu-group {
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 }
 
 .menu-group a,
 .mobile-links a {
   display: block;
+  margin: 0 0 5px;
   text-transform: uppercase;
-  margin: 0 0 8px;
 }
 
 .menu-group a:first-child,
@@ -68,7 +60,7 @@ a {
 .mobile-links a:nth-child(7) {
   font-style: italic;
   text-transform: none;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.1em;
 }
 
 .content-column {
@@ -79,24 +71,10 @@ a {
   padding: 7vh 8vw 7vh 7vw;
 }
 
-.work-view {
-  margin: 0;
-}
-
 .image-placeholder {
-  width: min(34vw, 560px);
+  width: min(32vw, 520px);
   aspect-ratio: 0.72;
   background: #eeeeee;
-}
-
-.work-view figcaption {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3px;
-  margin-top: 54px;
-  color: var(--fg);
-  letter-spacing: 0.1em;
-  text-transform: none;
 }
 
 .menu-button,
@@ -107,9 +85,9 @@ a {
 @media (max-width: 760px) {
   html,
   body {
-    font-size: 28px;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
   }
 
   .site-shell {
@@ -132,20 +110,14 @@ a {
     background: #eeeeee;
   }
 
-  .work-view figcaption {
-    margin-top: 120px;
-    gap: 8px;
-    letter-spacing: 0.04em;
-  }
-
   .menu-button {
     position: fixed;
     top: 25px;
     left: 24px;
     z-index: 30;
     display: block;
-    width: 46px;
-    height: 46px;
+    width: 42px;
+    height: 42px;
     border: 0;
     padding: 0;
     background: transparent;
@@ -155,9 +127,9 @@ a {
   .menu-button span {
     position: absolute;
     left: 0;
-    top: 22px;
-    width: 46px;
-    height: 4px;
+    top: 20px;
+    width: 42px;
+    height: 3px;
     background: var(--fg);
     transform-origin: center;
   }
@@ -193,13 +165,7 @@ a {
     display: block;
   }
 
-  .mobile-menu .site-name {
-    margin-bottom: 68px;
-    font-size: 32px;
-    letter-spacing: 0.08em;
-  }
-
   .mobile-links a {
-    margin-bottom: 26px;
+    margin-bottom: 18px;
   }
 }
