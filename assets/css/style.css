@@ -11,6 +11,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+html.locked body > *:not(.password-gate) { display: none !important; }
 body {
   margin: 0;
   background: var(--bg);
@@ -227,6 +228,53 @@ main {
   font-size: 12px;
   border-top: 1px solid var(--line);
 }
+.password-gate {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--pad);
+  background: var(--bg);
+}
+.password-card {
+  width: min(100%, 420px);
+  display: grid;
+  gap: 14px;
+}
+.password-card h1 {
+  margin: 0;
+  font-size: clamp(42px, 9vw, 84px);
+  line-height: 0.92;
+  font-weight: 400;
+  letter-spacing: -0.06em;
+}
+.password-kicker, .password-note, .password-error, .password-card label {
+  margin: 0;
+  color: var(--muted);
+}
+.password-kicker, .password-card label, .password-card button {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.password-card input {
+  width: 100%;
+  padding: 14px 0;
+  border: 0;
+  border-bottom: 1px solid var(--fg);
+  border-radius: 0;
+  background: transparent;
+  font: inherit;
+  outline: none;
+}
+.password-card button {
+  width: fit-content;
+  padding: 11px 18px;
+  border: 1px solid var(--fg);
+  background: var(--fg);
+  color: var(--bg);
+  cursor: pointer;
+}
+.password-error { min-height: 1.4em; }
 @media (max-width: 760px) {
   .site-header { align-items: center; }
   .nav-toggle { display: block; }
